@@ -82,7 +82,7 @@ if($_SESSION["user_type"]!="repeat_recent"){
 
 	<div class="bg">
 
-		<div id="alphawifi" class="content is-size-2">AlphaWifi</div>
+		<div id="alphawifi2" class="content is-size-2">AlphaWifi</div>
 		<div id="devices" class="content is-size-6">Please wait, you are being </div>
 		<div id="devices" class="content is-size-6">authorized on AlphaWiFi</div>
 
