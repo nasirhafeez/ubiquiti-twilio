@@ -1,11 +1,46 @@
 <?php error_reporting(E_ALL ^ E_NOTICE); 
 session_start();
 
+/*
+The file parameters.php contains several sensitive pieces of information like Twitter API parameters (sid,
+token, service id), Unifi Controller parameters (like username, password, IP) and DB parameters (username,
+password, DB name, table name). It makes it easy to remove sensitive information from code and change those
+parameters from a central location if required
+*/
+
 include 'parameters.php';
+
+/*
+When Unifi redirects the user to an external captive portal it passes two HTTP GET parameters, "id" and "ap" which
+include the user's MAC address and the AP's MAC address respectively. We will capture these parameters, store them
+and use them later on to authenticate the user
+*/
 
 $_SESSION["id"]=$_GET['id'];
 $_SESSION["ap"]=$_GET['ap'];
+
+/*
+We have defined 3 user types:
+
+1. new : fresh user, logging in to the system for the first time, with no previous record in DB
+2. repeat_recent : repeat user, with previous record in DB, logging in within 180 days of time recorded in DB
+3. repeat_old : repeat user, with previous record in DB, logging in after 180 days of time recorded in DB
+
+Login flow for each type of user:
+
+1: new : index.php -> result.php -> verify_pass.php (or verify_fail.php) -> login_success.php -> connecting.php -> thankyou.htm
+2. repeat_recent : index.php -> welcome.php -> connecting.php -> thankyou.htm
+3. repeat_old : index.php -> result.php -> verify_pass.php (or verify_fail.php) -> login_success.php -> connecting.php -> thankyou.htm
+
+The login flow in case # 1 and 3 are the same, although different sections of code will run based on each user's unique type
+*/
+
 $_SESSION["user_type"] = "new";
+
+/*
+Checking DB to see if user exists or not. If found, the last_updated column is checked to see if they're logging in
+within 180 days or after that
+*/
 
 $con=mysqli_connect($host_ip,$db_user,$db_pass,$db_name);
 

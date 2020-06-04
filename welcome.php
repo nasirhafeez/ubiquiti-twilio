@@ -1,5 +1,10 @@
 <?php error_reporting(E_ALL ^ E_NOTICE); 
 session_start();
+
+/*
+Printing a welcome message for the user
+*/
+
 ?>
 <!DOCTYPE HTML>
 <html>

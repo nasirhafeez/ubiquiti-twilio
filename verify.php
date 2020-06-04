@@ -1,6 +1,11 @@
 <?php error_reporting(E_ALL ^ E_NOTICE); 
 session_start();
 
+/*
+This page sends the API request to Twilio to send SMS to user's provided number, and the user is given is asked to
+enter code received on their phone. Some basic error handling is also given using the Javascript function
+*/
+
 include 'parameters.php';
 
 $phone = $_POST['country_code'].$_POST['phone_number']; 

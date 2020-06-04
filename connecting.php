@@ -7,6 +7,11 @@ $mac=$_SESSION["id"];
 $ap=$_SESSION["ap"];
 $last_updated = date("Y-m-d H:i:s");
 
+/*
+Collecting the data entered by users of type "new" or "repeat_old" in form. It will be posted to the DB.
+For "repeat_recent" type users no change will be made in the DB, they'll be authorized directly
+*/
+
 if($_SESSION["user_type"]=="new" || $_SESSION["user_type"]=="repeat_old"){
   $phone=$_SESSION["phone"];
   $fname = $_POST['fname'];
