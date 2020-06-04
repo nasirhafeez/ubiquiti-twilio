@@ -1,6 +1,10 @@
 <?php error_reporting(E_ALL ^ E_NOTICE); 
 session_start();
 
+/*
+This page runs an API request to Twilio to verify the code provided by the user
+*/
+
 include 'parameters.php';
 
 $_SESSION['code'] = trim($_POST['code']);

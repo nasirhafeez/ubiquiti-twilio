@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+/*
+In case of entering wrong code the user has the option to go back to the main page to try again
+*/
+
 $redirect_url = "index.php?id=".$_SESSION["id"]."&ap=".$_SESSION["ap"];
 
 ?>
