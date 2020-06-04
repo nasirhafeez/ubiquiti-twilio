@@ -2,9 +2,7 @@
 session_start();
 ?>
 <!DOCTYPE HTML>
-
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>WiFi AW</title>
@@ -17,9 +15,7 @@ session_start();
   <link rel="icon" type="image/png" href="favicomatic\favicon-16x16.png" sizes="16x16" />
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 	<div class="bg">
 
 		<div id="alphawifi2" class="content is-size-2">AlphaWifi</div>
@@ -28,6 +24,5 @@ session_start();
     <div id="devices" class="content is-size-6">in a few moments</div>
     
 	</div>
-
 </body>
 </html>

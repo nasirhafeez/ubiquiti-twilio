@@ -34,7 +34,6 @@ $verification = $twilio->verify->v2->services($serviceid)
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="bg">
 
     <form id="login_success" class="alphawifi_form" method="post" action="result.php" onsubmit="return codeCheck()">
@@ -62,24 +61,23 @@ $verification = $twilio->verify->v2->services($serviceid)
 
     </form>
 
-      </div>
+  </div>
 
-<script>
+  <script>
 
-  function codeCheck() {
-    var codeInput = document.getElementById('code').value;
-  
-    //The SMS code has to be a 6 digit number. Checking for that:
+    function codeCheck() {
+      var codeInput = document.getElementById('code').value;
     
-    if (codeInput.length != 6 || isNaN(codeInput)) {
-      document.getElementById("codeError").style.display = "block";
-      return false;
+      //The SMS code has to be a 6 digit number. Checking for that:
+      
+      if (codeInput.length != 6 || isNaN(codeInput)) {
+        document.getElementById("codeError").style.display = "block";
+        return false;
+      }
+      else {
+        return true;
+      }
     }
-    else {
-      return true;
-    }
-  }
   </script>
-
 </body>
 </html>

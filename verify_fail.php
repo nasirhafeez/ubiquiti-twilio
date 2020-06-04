@@ -5,9 +5,7 @@ $redirect_url = "index.php?id=".$_SESSION["id"]."&ap=".$_SESSION["ap"];
 
 ?>
 <!DOCTYPE HTML>
-
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>WiFi AW</title>
@@ -20,9 +18,7 @@ $redirect_url = "index.php?id=".$_SESSION["id"]."&ap=".$_SESSION["ap"];
   <link rel="icon" type="image/png" href="favicomatic\favicon-16x16.png" sizes="16x16" />
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 	<div class="bg">
 
 		<div id="alphawifi2" class="content is-size-2">AlphaWifi</div>
@@ -31,6 +27,5 @@ $redirect_url = "index.php?id=".$_SESSION["id"]."&ap=".$_SESSION["ap"];
     <div id="devices" class="content is-size-6">redirected back to our main page</div>
 
 	</div>
-
 </body>
 </html>

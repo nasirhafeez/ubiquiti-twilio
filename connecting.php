@@ -77,9 +77,7 @@ if($_SESSION["user_type"]!="repeat_recent"){
   <link rel="icon" type="image/png" href="favicomatic\favicon-16x16.png" sizes="16x16" />
   <link rel="stylesheet" href="style.css">  
 </head>
-
 <body>
-
 	<div class="bg">
 
 		<div id="alphawifi2" class="content is-size-2">AlphaWifi</div>
@@ -87,6 +85,5 @@ if($_SESSION["user_type"]!="repeat_recent"){
 		<div id="devices" class="content is-size-6">authorized on AlphaWiFi</div>
 
 	</div>
-
 </body>
 </html>
