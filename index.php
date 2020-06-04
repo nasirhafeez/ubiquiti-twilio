@@ -56,6 +56,7 @@ else {
   <script defer src="fontawesome-free-5.3.1-web\js\all.js"></script>
   <link rel="icon" type="image/png" href="favicomatic\favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicomatic\favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -329,57 +330,6 @@ else {
 
     </div>
   </form>
-
-    <style>
-
-/*
-      *{ border: 1px solid red; }
-*/
-
-      body {
-        color: white;
-        font-family: "Ariel", sans-serif;
-      }
-
-      .bg {
-        position:fixed;
-        padding:0;
-        margin:0;
-        top:0;
-        left:0;
-        width: 100%;
-        height: 100%;
-        background: url('background.jpg') center;
-        background-size: cover;
-      }
-
-      #country_code {width: 120px;}
-
-      #test {display: block;}
-
-      #phone_number {width: 200px;}
-
-      #alphawifi {text-align: center; margin-top: 20px; margin-bottom: 5px;}
-
-      #devices {text-align: center; margin: 0;}
-
-      #gap {margin-top: 5px;}
-
-      .centered_elements {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      @media only screen and (min-width: 768px) {
-        html {overflow: hidden;}
-        .bg {position: absolute; background: url('background.jpg') fixed; background-size: 100% 100%;}
-        #country_code {width: 120px;}
-        #phone_number {width: 200px;}
-      }
-
-    </style>
   </div>
 </body>
 </html>

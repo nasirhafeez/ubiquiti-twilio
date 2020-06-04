@@ -13,6 +13,7 @@ session_start();
   <script defer src="fontawesome-free-5.3.1-web\js\all.js"></script>
   <link rel="icon" type="image/png" href="favicomatic\favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicomatic\favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -156,87 +157,5 @@ session_start();
 
     </script>
 
-    <style>
-
-/*
-    *{ border: 1px solid red; }
-*/
-
-    body {
-      color: white;
-      font-family: "Ariel", sans-serif;
-    }
-
-    .bg {
-      position:fixed;
-      padding:0;
-      margin:0;
-      top:0;
-      left:0;
-      width: 100%;
-      height: 100%;
-      background: url('background.jpg') center;
-      background-size: cover;
-    }
-
-    .alphawifi_form {
-      margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    #country_code {width: 265px;}
-
-    #alphawifi {margin-bottom: 5px;}
-
-    #devices {text-align: center; margin: 0;}
-
-    #gap {margin-top: 5px;}
-
-    .terms {
-      font-size: 10px;
-    }
-
-    .terms:hover {
-      color: white;
-    }
-
-    a {
-      color: white;
-      text-decoration: underline;
-    }
-
-    a:hover {
-      color: white;
-    }
-
-    #support {
-      color: blue;
-      text-decoration: underline;
-    }
-
-    #checkbox_align {margin: auto; width: 76%; margin-left: 45px;}
-    #check_1 {margin-top: 10px; margin-bottom: 0;}
-
-    #modal-body {
-      color: black;
-      font-family: "Ariel", sans-serif;
-    }
-
-    @media only screen and (min-width: 768px) {
-      html {overflow: hidden;}
-      .bg {position: absolute; background: url('background.jpg') fixed; background-size: 100% 100%;}
-      .alphawifi_form {margin-top: 50px; display: flex; flex-wrap: wrap; flex-direction: column; align-items: center;}
-      #country_code {width: 230px;}
-      #checkbox_align {margin: auto; width: 30%; margin-left: 500px;}
-      #check_1 {margin-left: 20px; margin-top: 15px;}
-      #check_2 {margin-left: 20px;}
-    }
-
-  </style>
-
 </body>
 </html>
-

@@ -18,6 +18,7 @@ $redirect_url = "index.php?id=".$_SESSION["id"]."&ap=".$_SESSION["ap"];
   <meta http-equiv="refresh" content="5;url=<?php echo htmlspecialchars($redirect_url);?>" />
   <link rel="icon" type="image/png" href="favicomatic\favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicomatic\favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -31,53 +32,5 @@ $redirect_url = "index.php?id=".$_SESSION["id"]."&ap=".$_SESSION["ap"];
 
 	</div>
 
-
-
-    <style>
-
-/*
-    *{ border: 1px solid red; }
-*/
-
-    body {
-      color: white;
-      font-family: "Ariel", sans-serif;
-    }
-
-    .bg {
-      position:fixed;
-      padding:0;
-      margin:0;
-      top:0;
-      left:0;
-      width: 100%;
-      height: 100%;
-      background: url('background.jpg') center;
-      background-size: cover;
-    }
-    
-    #button_center {
-      margin-top: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center
-    }
-
-		#alphawifi {text-align: center; margin-top: 40px; margin-bottom: 5px;}
-
-    #devices {text-align: center; margin: 0;}
-
-    @media only screen and (min-width: 768px) {
-      html {overflow: hidden;}
-      .bg {position: absolute; background: url('background.jpg') fixed; background-size: 100% 100%;}
-			#alphawifi {text-align: center; margin-top: 80px; margin-bottom: 5px;}
-			#devices {text-align: center; margin: 0;}
-    }
-
-  </style>
-
 </body>
-
 </html>
-
