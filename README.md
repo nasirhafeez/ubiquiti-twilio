@@ -31,6 +31,7 @@ $db_user = "";
 $db_pass = "";
 $db_name = "";
 $table_name = "";
+
 ?>
 ```
 *Install Composer*
