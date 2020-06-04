@@ -34,4 +34,4 @@ Then run `php composer.phar install` to install the packages given in `composer.
 
 *Add Font Awesome*
 
-Put the folders `fontawesome-free-5.3.1-web` in this directory.
+Put the folders `fontawesome-free-5.3.1-web` in this directory (available [here](https://drive.google.com/file/d/1VewdN5J7ib1y9C1ya7cspws5yawmz3be/view?usp=sharing))
