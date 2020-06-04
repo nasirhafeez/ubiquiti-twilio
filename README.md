@@ -5,6 +5,8 @@ The captive portal web server can be setup using the instructions given [here](h
  
 Create a file `parameters.php` with the following variables (be sure to set the appropriate permissions so that it's not accessible by unauthorized users):
  ```
+<?php
+
 #Twitter API parameters
 
 $sid    = "";
@@ -29,6 +31,7 @@ $db_user = "";
 $db_pass = "";
 $db_name = "";
 $table_name = "";
+?>
 ```
 *Install Composer*
 
