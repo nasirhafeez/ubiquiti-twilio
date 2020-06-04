@@ -8,7 +8,6 @@ session_start();
   <title>WiFi AW</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="bulma.min.css" />
-  <link rel="stylesheet" href="font-awesome\css\font-awesome.min.css" />
   <script defer src="fontawesome-free-5.3.1-web\js\all.js"></script>
   <meta http-equiv="refresh" content="5;url=login_success.php" />
   <link rel="icon" type="image/png" href="favicomatic\favicon-32x32.png" sizes="32x32" />
