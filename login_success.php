@@ -15,7 +15,6 @@ session_start();
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
   <div class="bg">
     
     <form id="login_success" class="alphawifi_form" method="post" action="connecting.php">

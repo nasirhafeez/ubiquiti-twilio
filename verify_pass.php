@@ -19,9 +19,9 @@ session_start();
 	<div class="bg">
 
 		<div id="alphawifi2" class="content is-size-2">AlphaWifi</div>
-		<div id="devices" class="content is-size-6">Great! Your code has been approved!</div>
+ 		<div id="devices" class="content is-size-6">Great! Your code has been approved!</div>
 		<div id="devices" class="content is-size-6">You'll be automatically redirected</div>
-    <div id="devices" class="content is-size-6">in a few moments</div>
+		<div id="devices" class="content is-size-6">in a few moments</div>
     
 	</div>
 </body>

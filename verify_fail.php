@@ -23,8 +23,8 @@ $redirect_url = "index.php?id=".$_SESSION["id"]."&ap=".$_SESSION["ap"];
 
 		<div id="alphawifi2" class="content is-size-2">AlphaWifi</div>
 		<div id="devices" class="content is-size-6">Sorry! The code you entered</div>
-    <div id="devices" class="content is-size-6">is not correct. You'll shortly be</div>
-    <div id="devices" class="content is-size-6">redirected back to our main page</div>
+		<div id="devices" class="content is-size-6">is not correct. You'll shortly be</div>
+		<div id="devices" class="content is-size-6">redirected back to our main page</div>
 
 	</div>
 </body>
