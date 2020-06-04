@@ -1,5 +1,7 @@
 # Ubiquiti Captive Portal with Twilio Verify
-Ubiquiti external captive portal with SMS login using Twilio Verify. The following actions are required to use the code given in this repo:
+Ubiquiti external captive portal with SMS login using Twilio Verify. 
+
+The captive portal web server can be setup using the instructions given [here](https://gist.github.com/nasirhafeez/4e1c2c5536d313db96e2b4ce4b3b269e). The following actions are required to use the code given in this repo:
  
 Create a file `parameters.php` with the following variables (be sure to set the appropriate permissions so that it's not accessible by unauthorized users):
  ```
@@ -35,5 +37,3 @@ Then run `php composer.phar install` to install the packages given in `composer.
 *Add Font Awesome*
 
 Put the folders `fontawesome-free-5.3.1-web` in this directory (available [here](https://drive.google.com/file/d/1VewdN5J7ib1y9C1ya7cspws5yawmz3be/view?usp=sharing)).
-
-<script src="https://gist.github.com/nasirhafeez/4e1c2c5536d313db96e2b4ce4b3b269e.js"></script>
