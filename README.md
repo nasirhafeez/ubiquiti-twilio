@@ -1,7 +1,7 @@
 # Ubiquiti Captive Portal with Twilio Verify
-Ubiquiti external captive portal with SMS Login Using Twilio Verify. The following actions are required to use the code given in this repo:
+Ubiquiti external captive portal with SMS login using Twilio Verify. The following actions are required to use the code given in this repo:
  
-*Create a file `parameters.php` with the following variables*
+Create a file `parameters.php` with the following variables:
  ```
 #Twitter API parameters
 
