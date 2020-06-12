@@ -16,7 +16,7 @@ $serviceid = "";
 #Unifi parameters
 
 $duration = ;
-$site_id = '';
+$site_id = $_SESSION["siteid"];
 
 $controlleruser     = ''; // the user name for access to the UniFi Controller
 $controllerpassword = ''; // the password for access to the UniFi Controller
