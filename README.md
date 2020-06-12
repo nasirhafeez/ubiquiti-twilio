@@ -30,8 +30,8 @@ $host_ip = "";
 $db_user = "";
 $db_pass = "";
 $db_name = "";
-$table_name = "";
-
+$table1_name = "";
+$table2_name = $_SESSION["table"];
 ?>
 ```
 *Install Composer*
