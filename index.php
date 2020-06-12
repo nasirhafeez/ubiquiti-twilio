@@ -48,7 +48,14 @@ if (mysqli_connect_errno()) {
         echo "Failed to connect to SQL: " . mysqli_connect_error();
 }
 
-$result = mysqli_query($con, "SELECT * FROM $table_name WHERE mac='$_SESSION[id]'");
+$table2 = mysqli_query($con, "SELECT name FROM `$table1_name` WHERE siteid='$site_id'");
+
+if($table2->num_rows >= 1) {
+  $tablerow=mysqli_fetch_array($table2);
+  $_SESSION["table"] = $tablerow[0];
+}
+
+$result = mysqli_query($con, "SELECT * FROM `$table2_name` WHERE mac='$_SESSION[id]'");
 
 if ($result->num_rows >= 1) {
 	$row=mysqli_fetch_array($result);
