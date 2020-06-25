@@ -55,7 +55,7 @@ if($table2->num_rows >= 1) {
   $_SESSION["table"] = $tablerow[0];
 }
 
-$result = mysqli_query($con, "SELECT * FROM `$table2_name` WHERE mac='$_SESSION[id]'");
+$result = mysqli_query($con, "SELECT * FROM `$_SESSION[table]` WHERE mac='$_SESSION[id]'");
 
 if ($result->num_rows >= 1) {
 	$row=mysqli_fetch_array($result);
