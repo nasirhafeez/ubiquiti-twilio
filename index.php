@@ -28,9 +28,9 @@ We have defined 3 user types:
 
 Login flow for each type of user:
 
-1: new : index.php -> result.php -> verify_pass.php (or verify_fail.php) -> login_success.php -> connecting.php -> thankyou.htm
+1: new : index.php -> verify.php -> result.php -> verify_pass.php (or verify_fail.php) -> login_success.php -> connecting.php -> thankyou.htm
 2. repeat_recent : index.php -> welcome.php -> connecting.php -> thankyou.htm
-3. repeat_old : index.php -> result.php -> verify_pass.php (or verify_fail.php) -> login_success.php -> connecting.php -> thankyou.htm
+3. repeat_old : index.php -> verify.php -> result.php -> verify_pass.php (or verify_fail.php) -> login_success.php -> connecting.php -> thankyou.htm
 
 The login flow in case # 1 and 3 are the same, although different sections of code will run based on each user's unique type
 */
