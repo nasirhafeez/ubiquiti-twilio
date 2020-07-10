@@ -62,6 +62,6 @@ $db_name = "";
 
 Be sure to set the appropriate permissions on `parameters.php` and `secret.php` so that they're not accessible by unauthorized users.
 
-*Install Composer*
+*Download Dependencies Using Composer*
 
-Then run `php composer.phar install` to install the packages given in `composer.json`.
+Install Composer and then run `php composer.phar install` to install the packages given in `composer.json`.
