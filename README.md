@@ -60,7 +60,7 @@ $db_name = "";
 ?>
 ```
 
-Be sure to set the appropriate permissions on `parameters.php` and `secret.php` so that it's not accessible by unauthorized users.
+Be sure to set the appropriate permissions on `parameters.php` and `secret.php` so that they're not accessible by unauthorized users.
 
 *Install Composer*
 
