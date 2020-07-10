@@ -43,7 +43,7 @@ $serviceid = "";
 
 #Unifi parameters
 
-$duration = 2000;
+$duration = ;
 
 $controlleruser     = ''; // the user name for access to the UniFi Controller
 $controllerpassword = ''; // the password for access to the UniFi Controller
