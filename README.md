@@ -13,7 +13,7 @@ guest/s# mv ubiquiti-twilio/ <site ID>
 guest/s# cd <site ID>
 ```
 
-Create a file `parameters.php` and manually set the two variables given below specific to this site:
+Create a file `parameters.php` and manually set the two variables given below for this site:
  ```
 <?php
 
