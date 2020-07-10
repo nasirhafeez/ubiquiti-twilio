@@ -6,6 +6,7 @@ The captive portal web server can be setup using the instructions given [here](h
 This code will be placed in `/guest/s/<site ID>` directory on the virtual host's document root. The following procedure can be adopted for setting up this repo starting from document root working directory:
 
 ```
+# mkdir -p guest/s
 # cd guest/s
 guest/s# git clone https://github.com/nasirhafeez/ubiquiti-twilio.git
 guest/s# mv ubiquiti-twilio/ <site ID>
