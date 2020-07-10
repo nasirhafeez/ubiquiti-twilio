@@ -110,6 +110,8 @@ a:hover {
     align-items: center
 }
 
+/* Media Query for Mobiles */
+
 @media only screen and (min-width: 768px) {
     html {
         overflow: hidden;
@@ -137,5 +139,25 @@ a:hover {
     }
     #check_2 {
         margin-left: 20px;
-    }													 
+    }
+}
+
+/* Media Query for iPads */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    #checkbox_align {
+        margin-left: 35%;
+        width: 45%; 
+    }
+    #check_1 {
+        margin: auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: stretch;
+    }
+    #check_2 {
+        margin: auto;
+    }
 }
