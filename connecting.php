@@ -43,7 +43,7 @@ if($_SESSION["user_type"]!="repeat_recent"){
   if($_SESSION["user_type"]=="new"){
 
     mysqli_query($con, "
-    CREATE TABLE IF NOT EXISTS `$table2_name` (
+    CREATE TABLE IF NOT EXISTS `$table_name` (
       `id` int(11) NOT NULL AUTO_INCREMENT,
       `phone` varchar(45) NOT NULL,
       `firstname` varchar(45) NOT NULL,
@@ -57,12 +57,12 @@ if($_SESSION["user_type"]!="repeat_recent"){
       UNIQUE KEY `id_UNIQUE` (`id`)
     )");
 
-    mysqli_query($con,"INSERT INTO `$table2_name` (phone, firstname, lastname, apartment, offers, mac, ap, last_updated) VALUES ('$phone', '$fname', '$lname', '$aptunit', '$offers', '$mac', '$ap', '$last_updated')");
+    mysqli_query($con,"INSERT INTO `$table_name` (phone, firstname, lastname, apartment, offers, mac, ap, last_updated) VALUES ('$phone', '$fname', '$lname', '$aptunit', '$offers', '$mac', '$ap', '$last_updated')");
 
   }
   else {
     $db_id = $_SESSION["db_id"];
-    mysqli_query($con,"UPDATE `$table2_name` SET phone='$phone', firstname='$fname', lastname='$lname', apartment='$aptunit', offers='$offers', ap='$ap', last_updated='$last_updated' WHERE id='$db_id'");
+    mysqli_query($con,"UPDATE `$table_name` SET phone='$phone', firstname='$fname', lastname='$lname', apartment='$aptunit', offers='$offers', ap='$ap', last_updated='$last_updated' WHERE id='$db_id'");
   }
 
   mysqli_close($con);
