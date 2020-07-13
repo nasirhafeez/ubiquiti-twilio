@@ -18,7 +18,7 @@ $site_id = "";
 ?>
 ```
 
-Copy the `.env.example` file to the upper level folder and change its name to `.env`. Set the values of project-wide environment variables in it.
+Copy the `.env.example` file to the upper level folder and change its name to `.env`. Set the values of the given project-wide environment variables in it.
 
 *Install Composer*
 
