@@ -5,11 +5,16 @@ session_start();
 This page runs an API request to Twilio to verify the code provided by the user
 */
 
-include 'parameters.php';
-
 $_SESSION['code'] = trim($_POST['code']);
 
 require __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "/../");
+$dotenv->load();
+
+$sid = $_SERVER['SID'];
+$token = $_SERVER['TOKEN'];
+$serviceid = $_SERVER['SERVICEID'];
 
 use Twilio\Rest\Client;
 
@@ -21,8 +26,6 @@ $verification_check = $twilio->verify->v2->services($serviceid)
                                                   ["to" => $_SESSION['phone']]
                                          );
 
-//print($verification_check->status);
-
 if ($verification_check->status == "approved") {
     header("Location: verify_pass.php");
 }
@@ -31,4 +34,3 @@ else {
 }
 
 ?>
-

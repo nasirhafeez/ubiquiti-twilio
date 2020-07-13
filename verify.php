@@ -6,13 +6,18 @@ This page sends the API request to Twilio to send SMS to user's provided number,
 enter code received on their phone. Some basic error handling is also given using the Javascript function
 */
 
-include 'parameters.php';
-
 $phone = $_POST['country_code'].$_POST['phone_number']; 
 
 $_SESSION['phone'] = trim($phone);
 
 require __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "/../");
+$dotenv->load();
+
+$sid = $_SERVER['SID'];
+$token = $_SERVER['TOKEN'];
+$serviceid = $_SERVER['SERVICEID'];
 
 use Twilio\Rest\Client;
 
@@ -21,9 +26,6 @@ $twilio = new Client($sid, $token);
 $verification = $twilio->verify->v2->services($serviceid)
                                    ->verifications
                                    ->create($_SESSION['phone'], "sms");
-
-//print($verification->status);
-
 ?>
 <!doctype html>
 <html>
