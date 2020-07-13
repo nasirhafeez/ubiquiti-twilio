@@ -1,11 +1,14 @@
 <?php error_reporting(E_ALL ^ E_NOTICE); 
 session_start();
 
+require __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "/../");
+
+$dotenv->load();
+
 /*
-The file parameters.php contains several sensitive pieces of information like Twitter API parameters (sid,
-token, service id), Unifi Controller parameters (like username, password, IP) and DB parameters (username,
-password, DB name, table name). It makes it easy to remove sensitive information from code and change those
-parameters from a central location if required
+The file parameters.php contains MYSQL table name and Unifi site ID for this site
 */
 
 include 'parameters.php';
@@ -41,6 +44,11 @@ $_SESSION["user_type"] = "new";
 Checking DB to see if user exists or not. If found, the last_updated column is checked to see if they're logging in
 within 180 days or after that
 */
+
+$host_ip = $_SERVER['HOST_IP'];
+$db_user = $_SERVER['DB_USER'];
+$db_pass = $_SERVER['DB_PASS'];
+$db_name = $_SERVER['DB_NAME'];
 
 $con=mysqli_connect($host_ip,$db_user,$db_pass,$db_name);
 
