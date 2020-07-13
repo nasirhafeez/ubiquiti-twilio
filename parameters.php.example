@@ -1,0 +1,11 @@
+<?php
+
+#MySQL DB table name for this site
+
+$table_name = "";
+
+#Unifi Site ID for this site
+
+$site_id = "";
+
+?>
