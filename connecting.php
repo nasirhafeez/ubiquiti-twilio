@@ -46,7 +46,7 @@ $unifi_connection = new UniFi_API\Client($controlleruser, $controllerpassword, $
 $set_debug_mode   = $unifi_connection->set_debug($debug);
 $loginresults     = $unifi_connection->login();
 
-$auth_result = $unifi_connection->authorize_guest($mac, $duration, $ap);
+$auth_result = $unifi_connection->authorize_guest($mac, $duration, null, null, null, $ap);
 
 if($_SESSION["user_type"]!="repeat_recent"){
 
